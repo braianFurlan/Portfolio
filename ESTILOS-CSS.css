@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+
+
+
+}
+
+.caja-principal{
+    background-color: #202020;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.proyectos{
+    background-color: #202020;
+    height: 500px;
+    
+    position: relative;
+}
+.proyectos h2{
+    color: white;
+    
+    
+}
+
+.proyectoArticulo{
+    background-color: #5F5F5F;
+    color:white;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+.proyectos .proyectoArticulo a img {
+    height: 400px
+    
+}
+.contacto{
+    background-color: #5F5F5F;
+    height: 300px;
+}
+.redes-container{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 300px;
+    height: 300px;   
+    text-align: center;
+
+}
+.redes-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 90px;
+    font-size: 40px;
+    box-shadow: 0 3px 5px 0px rgb(0,0,0 .2);
+
+}
+.caja{
+    background-color: #5F5F5F;
+    width: 950px;
+    height: 450px;
+    display: flex;
+    position: relative;
+    border-radius: 10%;
+
+}
+.caja2{
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    display: flex;
+   position: absolute;
+   right: 0%;
+   border-radius: 10%;
+    
+    
+
+}
+.caja-principal img {
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    
+}
+
+
+
+
+
+
+
+nav{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0, 25px;
+
+}
+nav.logo    {
+   
+}
+li{
+    margin-right: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px,25px;
+
+}
+nav a:hover{
+    color: black;
+    background-color: #00c3ff;
+    
+
+
+}
+.contenedor p{
+    width: fit-content;
+    margin: 130px auto;
+    font-size: 24px;
+   
+    text-align: center;
+}
+.cursos{
+    width: fit-content;
+    margin: auto;
+    font-size: 24px;
+    
+}
+
+
+
+
+
+.caja-central{
+    margin: 200px;
+   display: inline-block;
+
+    
+    
+}
+
+
+
+p{
+    font-size: 24px;
+    margin:  200px;
+    text-align: center;
+    
+}
+.contenedorCards{
+ position: relative;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.cards .card {
+    background-color: white;
+    color:white;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+
+}
+.cards .card:hover{
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px)   ;
+
+}
+.cards .card .header img {
+    width: 270px;
+}
+
+h3, h2 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+
+
+
+
