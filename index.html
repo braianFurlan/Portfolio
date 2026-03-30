@@ -1,107 +1,40 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Braian Furlan | Analista de Datos</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Braian Furlan | Analista de Datos</title>
 
+    <script src="script.js"></script>
 
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-error-container": "#93000a",
-              "on-error": "#ffffff",
-              "outline-variant": "#c3c6d7",
-              "surface-container-highest": "#e0e3e5",
-              "error-container": "#ffdad6",
-              "on-primary-container": "#eeefff",
-              "background": "#f7f9fb",
-              "on-secondary-container": "#fffbff",
-              "surface-container": "#eceef0",
-              "surface": "#f7f9fb",
-              "tertiary-container": "#007b71",
-              "on-tertiary-fixed": "#00201d",
-              "primary-fixed-dim": "#b4c5ff",
-              "surface-container-lowest": "#ffffff",
-              "error": "#ba1a1a",
-              "secondary-container": "#8a4cfc",
-              "on-primary-fixed-variant": "#003ea8",
-              "surface-dim": "#d8dadc",
-              "primary-fixed": "#dbe1ff",
-              "surface-container-low": "#f2f4f6",
-              "on-secondary-fixed-variant": "#5a00c6",
-              "on-surface-variant": "#434655",
-              "surface-variant": "#e0e3e5",
-              "primary": "#004ac6",
-              "tertiary-fixed-dim": "#6bd8cb",
-              "on-secondary-fixed": "#25005a",
-              "secondary-fixed-dim": "#d2bbff",
-              "on-primary": "#ffffff",
-              "tertiary-fixed": "#89f5e7",
-              "outline": "#737686",
-              "on-tertiary-fixed-variant": "#005049",
-              "on-secondary": "#ffffff",
-              "on-primary-fixed": "#00174b",
-              "surface-container-high": "#e6e8ea",
-              "on-tertiary-container": "#b3fff3",
-              "on-surface": "#191c1e",
-              "surface-bright": "#f7f9fb",
-              "tertiary": "#006058",
-              "primary-container": "#2563eb",
-              "inverse-primary": "#b4c5ff",
-              "surface-tint": "#0053db",
-              "inverse-on-surface": "#eff1f3",
-              "on-tertiary": "#ffffff",
-              "inverse-surface": "#2d3133",
-              "secondary": "#712ae2",
-              "secondary-fixed": "#eaddff",
-              "on-background": "#191c1e"
-            },
-            fontFamily: {
-              "headline": ["Manrope"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
-    </script>
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-  
-  <script src="config.js"></script>
-
-  
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-
- 
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-
-  
-  <link rel="stylesheet" href="styles.css"/>
-  
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
 
-<body class="bg-background font-body text-on-surface">
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 w-full">
+            <div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">
+                Braian Furlan
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="font-manrope font-semibold tracking-tight text-sm text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 transition-all" href="#inicio">Inicio</a>
+                <a class="font-manrope font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#sobre-mi">Sobre mí</a>
+                <a class="font-manrope font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#habilidades">Habilidades</a>
+                <a class="font-manrope font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#proyectos">Proyectos</a>
+                <a class="font-manrope font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#contacto">Contacto</a>
+            </div>
+            <button class="bg-primary text-on-primary px-5 py-2 rounded-md font-manrope font-semibold text-sm hover:opacity-90 active:scale-95 transition-all">
+                Descargar CV
+            </button>
+        </div>
+    </nav>
 
-  <!-- NAV -->
-  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
-      <div class="text-xl font-bold">Braian Furlan</div>
-      <button class="bg-primary text-white px-5 py-2 rounded-md">
-        Descargar CV
-      </button>
-    </div>
-  </nav>
-
-
-  <main class="pt-24 space-y-24">
+    <main class="pt-24 space-y-24">
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-24" id="inicio">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -428,23 +361,13 @@
 </section>
 </main>
 
- 
+    <footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200/15 py-12">
+        <div class="text-center">
+            <span class="font-manrope font-bold text-slate-900 dark:text-slate-100 text-lg">Braian Furlan</span>
+            <p class="text-xs text-slate-500">© 2024 Braian Furlan. Analista de Datos.</p>
+        </div>
+    </footer>
 
-  <footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200/15 dark:border-slate-800/15">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto w-full">
-<div class="mb-8 md:mb-0 space-y-2">
-<span class="font-manrope font-bold text-slate-900 dark:text-slate-100 text-lg">Braian Furlan</span>
-<p class="font-inter text-xs text-slate-500 dark:text-slate-400">© 2024 Braian Furlan. Analista de Datos.</p>
-</div>
-<div class="flex gap-8">
-<a class="font-inter text-xs text-slate-500 dark:text-slate-400 hover:text-blue-500 hover:underline transition-all" href="#">LinkedIn</a>
-<a class="font-inter text-xs text-slate-500 dark:text-slate-400 hover:text-blue-500 hover:underline transition-all" href="#">GitHub</a>
-<a class="font-inter text-xs text-slate-500 dark:text-slate-400 hover:text-blue-500 hover:underline transition-all" href="#">Email</a>
-</div>
-</div>
-</footer>
-
-  <!-- JS -->
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
